@@ -63,6 +63,12 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .activity-card h4 {
@@ -106,6 +112,29 @@ button {
 
 button:hover {
   background-color: #3949ab;
+}
+
+.participants-section {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.participants-section p {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+}
+
+.participants-list {
+  list-style: disc inside;
+  margin: 0;
+  padding-left: 18px;
+  color: #555;
+}
+
+.participants-list li {
+  margin-bottom: 5px;
 }
 
 .message {
